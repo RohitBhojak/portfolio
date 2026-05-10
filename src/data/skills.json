@@ -35,8 +35,7 @@
       "skills": [
         { "name": "Java", "icon": "skill-icons:java-dark" },
         { "name": "LeetCode (1800+)", "icon": "simple-icons:leetcode" },
-        { "name": "Codeforces (1000+)", "icon": "simple-icons:codeforces" },
-        { "name": "Data Structures & Algorithms", "icon": "fluent:brain-circuit-20-regular" }
+        { "name": "Codeforces (1000+)", "icon": "simple-icons:codeforces" }
       ]
     }
   ]

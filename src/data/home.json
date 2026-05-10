@@ -10,13 +10,13 @@
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
+      "url": "https://github.com/RohitBhojak",
       "icon": "mdi:github",
       "showInContact": true
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "url": "https://linkedin.com/in/rohit-bhojak",
       "icon": "mdi:linkedin",
       "showInContact": true
     },
@@ -34,13 +34,13 @@
     },
     {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:rohitbhojak99@gmail.com",
       "icon": "mdi:email",
       "showInContact": true
     },
     {
       "name": "Whatsapp",
-      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "url": "https://wa.me/918882329599",
       "icon": "mdi:whatsapp",
       "showInContact": true
     },
