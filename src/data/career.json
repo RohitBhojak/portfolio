@@ -1,26 +1,26 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
-    "period": "Oct 2025 - Present",
-    "type": "Full time job",
-    "description": "Leading cross-platform mobile development using Flutter and FastAPI. Focused on scalable system design and high-performance data processing.",
-    "skills": ["Leading", "Collaboration"]
+    "company": "Consint.ai",
+    "role": "Frontend Developer Intern",
+    "period": "Nov 2025 - Present",
+    "type": "Internship",
+    "description": "Promoted to Frontend Team Lead within 5 months. Architected modules for Autoclaims.ai and HITPA ERP (60M+ claims), reducing redundancy by 40% and serving as Repository Maintainer.",
+    "skills": ["React", "TypeScript", "TanStack Query", "Redux", "Zod"]
   },
   {
-    "company": "Demo Company",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
-    "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
+    "company": "OpenSUSE (Uyuni Project)",
+    "role": "Open-Source Contributor",
+    "period": "Aug 2025 - Nov 2025",
+    "type": "Open Source",
+    "description": "Modernized legacy Java systems by refactoring raw types and resolving structural vulnerabilities. Adhered to strict enterprise standards with clean, linear Git history.",
+    "skills": ["Java", "SonarCloud", "Git", "Code Refactoring"]
   },
   {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
-    "type": "Student",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["C++", "OOP", "Problem Solving"]
+    "company": "Galgotias College (GCET)",
+    "role": "B.Tech in CS & Design",
+    "period": "Nov 2022 - Jun 2026",
+    "type": "Education",
+    "description": "Focusing on DSA and System Design. Ranked in the top 7% globally on LeetCode (1800+ Rating) with 750+ problems solved. Academic Aggregate: 80.6%.",
+    "skills": ["Java", "DSA", "OOP", "System Design"]
   }
 ]
