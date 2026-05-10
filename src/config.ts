@@ -1,6 +1,9 @@
 export const SITE_CONFIG = {
-    // ----- THEME VARIABLE -----
-    // FEEL FREE TO CHANGE THIS TO ONE OF THE OPTIONS
-    // Options: 'default', 'strategic', 'innovator', 'executive'
-  baseTheme: 'default',
+  // ----- THEME VARIABLE -----
+  // FEEL FREE TO CHANGE THIS TO ONE OF THE OPTIONS
+  // Options: 'default', 'strategic', 'innovator', 'executive'
+  baseTheme: "default",
+  // baseTheme: "strategic",
+  // baseTheme: "innovator",
+  // baseTheme: "executive",
 };
