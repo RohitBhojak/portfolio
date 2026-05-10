@@ -1,10 +1,14 @@
 {
-  "name": "John Doe",
-  "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
+  "name": "Rohit Singh Bhojak",
+  "photoUrl": "RohitSinghBhojak.jpg",
+
+  "intro": "A FullStack Web Developer and Competitive Programmer dedicated to building high-performance web systems. My philosophy is rooted in technical excellence and ownership, whether I'm leading a frontend team to launch AI-driven enterprise products or solving complex algorithmic challenges. I thrive on transforming intricate requirements into clean, scalable, and high-impact digital solutions.",
+
+  "introHtml": "A FullStack Web Developer and Competitive Programmer dedicated to building high-performance web systems. My <span class='text-white font-bold'>philosophy</span> is rooted in technical excellence and ownership, from <span class='text-white font-bold'>leading frontend teams</span> to launching AI-driven enterprise products. I thrive on transforming intricate requirements into <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> digital solutions.",
+
+  "webpageTitle": "Rohit Singh Bhojak | FullStack Web Developer",
+
+  "resumeUrl": "Rohit_resume.pdf",
 
   "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
