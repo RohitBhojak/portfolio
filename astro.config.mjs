@@ -1,17 +1,27 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from "@tailwindcss/vite";
 
-import icon from 'astro-icon';
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
   // site: '#',
   // base: '/',
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
   },
 
-  integrations: [icon()]
+  integrations: [
+    icon({
+      // This tells astro-icon where to look for icons
+      include: {
+        // You can specifically allow sets here
+        "simple-icons": ["*"],
+        fluent: ["*"],
+        "skill-icons": ["*"],
+      },
+    }),
+  ],
 });

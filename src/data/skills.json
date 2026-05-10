@@ -1,0 +1,43 @@
+{
+  "categories": [
+    {
+      "title": "Frontend",
+      "skills": [
+        { "name": "React", "icon": "skill-icons:react-dark" },
+        { "name": "Next.js", "icon": "skill-icons:nextjs-dark" },
+        { "name": "Astro", "icon": "skill-icons:astro" },
+        { "name": "TypeScript", "icon": "skill-icons:typescript" },
+        { "name": "JavaScript", "icon": "skill-icons:javascript" },
+        { "name": "Tailwind CSS", "icon": "skill-icons:tailwindcss-dark" },
+        { "name": "Redux", "icon": "skill-icons:redux" }
+      ]
+    },
+    {
+      "title": "Backend & DB",
+      "skills": [
+        { "name": "Node.js", "icon": "skill-icons:nodejs-dark" },
+        { "name": "Express.js", "icon": "skill-icons:expressjs-dark" },
+        { "name": "PostgreSQL", "icon": "skill-icons:postgresql-dark" },
+        { "name": "Prisma", "icon": "skill-icons:prisma" },
+        { "name": "MongoDB", "icon": "skill-icons:mongodb" }
+      ]
+    },
+    {
+      "title": "Core & Tools",
+      "skills": [
+        { "name": "Git", "icon": "skill-icons:git" },
+        { "name": "Vite", "icon": "skill-icons:vite-dark" },
+        { "name": "Jest", "icon": "skill-icons:jest" }
+      ]
+    },
+    {
+      "title": "Problem Solving",
+      "skills": [
+        { "name": "Java", "icon": "skill-icons:java-dark" },
+        { "name": "LeetCode (1800+)", "icon": "simple-icons:leetcode" },
+        { "name": "Codeforces (1000+)", "icon": "simple-icons:codeforces" },
+        { "name": "Data Structures & Algorithms", "icon": "fluent:brain-circuit-20-regular" }
+      ]
+    }
+  ]
+}
