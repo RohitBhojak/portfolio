@@ -2,7 +2,7 @@
 
 **A Data-Driven, High-Performance Professional Showcase**
 
-Live Demo: [yourname.netlify.app](https://careerportofio.netlify.app)
+Live Demo: [rohit-singh-bhojak.netlify.app](https://rohit-singh-bhojak.netlify.app)
 
 ## 👤 About Me
 
