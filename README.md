@@ -45,5 +45,3 @@ To run this project locally:
 ### 🙏 Acknowledgments
 
 This portfolio was built using the [CareerPortfolio Template](https://careerportofio.netlify.app), a data-driven SSG framework designed for high-performance resumes.
-
----
