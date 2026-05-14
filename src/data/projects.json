@@ -1,34 +1,34 @@
 [
   {
     "title": "Vantage",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
+    "description": "A Material You e-commerce SPA built with Vite/React, featuring a robust Vitest suite for guaranteed frontend reliability.",
     "images": ["vantage-1.png", "vantage-2.png", "vantage-3.png", "vantage-4.png"],
-    "tech": ["React", "Tailwind", "Context API"],
+    "tech": ["React", "Vite", "Vitest", "Context API", "Tailwind"],
     "link": "https://vantage-teal.vercel.app/",
     "github": "https://github.com/RohitBhojak/Vantage",
     "category": "Personal Project"
   },
   {
     "title": "CVmaker",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "description": "High-fidelity resume builder generating 100% ATS-friendly PDFs with dynamic subsections and professional templates.",
     "images": ["CVmaker-1.png", "CVmaker-2.png"],
-    "tech": ["React", "Tailwind"],
+    "tech": ["React", "Vite", "Tailwind"],
     "link": "https://cv-maker-gray.vercel.app/",
     "github": "https://github.com/RohitBhojak/CVmaker",
     "category": "Personal Project"
   },
   {
     "title": "BattleShip",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "description": "TDD-engineered naval combat game featuring a custom 'Hunt and Target' AI and retro GBA-style graphics.",
     "images": ["battleship-1.png", "battleship-2.png"],
-    "tech": ["Vanilla Javascript", "WebPack", "Jest"],
+    "tech": ["Vanilla JS", "Webpack", "Jest"],
     "link": "https://rohitbhojak.github.io/Battleship/",
     "github": "https://github.com/RohitBhojak/Battleship",
     "category": "Personal Project"
   },
   {
     "title": "Algorithm Visualizer",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
+    "description": "Fluid algorithm visualizer using requestAnimationFrame for high-performance animations of searching and sorting.",
     "images": ["algoviz-1.png", "algoviz-2.png", "algoviz-3.png", "algoviz-4.png", "algoviz-5.png"],
     "tech": ["Vanilla JS", "requestAnimationFrame API"],
     "link": "https://rohitbhojak.github.io/Algorithm-Visualizer/",
@@ -37,18 +37,18 @@
   },
   {
     "title": "DoTODO",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "description": "Terminal-themed task manager built with modular architecture and SOLID principles for clean, maintainable code.",
     "images": ["dotodo-1.png", "dotodo-2.png", "dotodo-3.png"],
-    "tech": ["Vanilla JS", "WebPack"],
+    "tech": ["Vanilla JS", "Webpack"],
     "link": "https://rohitbhojak.github.io/dotodo/",
     "github": "https://github.com/RohitBhojak/dotodo",
     "category": "Personal Project"
   },
   {
     "title": "Message Board",
-    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "description": "Full-stack MVC message board with persistent data storage using Express.js and PostgreSQL, with validation via express-validator.",
     "images": ["mmb-1.png", "mmb-2.png"],
-    "tech": ["Vanilla Javascript", "requestAnimationFrame"],
+    "tech": ["Express.js", "PostgreSQL", "EJS"],
     "link": "https://mini-message-board-eun8.onrender.com/",
     "github": "https://github.com/RohitBhojak/mini-message-board",
     "category": "Personal Project"
