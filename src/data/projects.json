@@ -1,20 +1,56 @@
 [
   {
-    "title": "Awesome Website",
+    "title": "Vantage",
     "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
-    "tech": ["Astro", "Tailwind"],
-    "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
-    "category": "Published Website"
+    "images": ["vantage-1.png", "vantage-2.png", "vantage-3.png", "vantage-4.png"],
+    "tech": ["React", "Tailwind", "Context API"],
+    "link": "https://vantage-teal.vercel.app/",
+    "github": "https://github.com/RohitBhojak/Vantage",
+    "category": "Personal Project"
   },
   {
-    "title": "Demo Mobile App",
+    "title": "CVmaker",
     "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
-    "images": ["astro-02.jpeg", "#"],
-    "tech": ["Flutter", "Dart", "REST API"],
-    "platforms": ["apple-ios", "android"],
-    "link": "https://github.com/nbakh16/career-portfolio-template",
-    "category": "Hobby"
+    "images": ["CVmaker-1.png", "CVmaker-2.png"],
+    "tech": ["React", "Tailwind"],
+    "link": "https://cv-maker-gray.vercel.app/",
+    "github": "https://github.com/RohitBhojak/CVmaker",
+    "category": "Personal Project"
+  },
+  {
+    "title": "BattleShip",
+    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "images": ["battleship-1.png", "battleship-2.png"],
+    "tech": ["Vanilla Javascript", "WebPack", "Jest"],
+    "link": "https://rohitbhojak.github.io/Battleship/",
+    "github": "https://github.com/RohitBhojak/Battleship",
+    "category": "Personal Project"
+  },
+  {
+    "title": "Algorithm Visualizer",
+    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
+    "images": ["algoviz-1.png", "algoviz-2.png", "algoviz-3.png", "algoviz-4.png", "algoviz-5.png"],
+    "tech": ["Vanilla JS", "requestAnimationFrame API"],
+    "link": "https://rohitbhojak.github.io/Algorithm-Visualizer/",
+    "github": "https://github.com/RohitBhojak/Algorithm-Visualizer",
+    "category": "Personal Project"
+  },
+  {
+    "title": "DoTODO",
+    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "images": ["dotodo-1.png", "dotodo-2.png", "dotodo-3.png"],
+    "tech": ["Vanilla JS", "WebPack"],
+    "link": "https://rohitbhojak.github.io/dotodo/",
+    "github": "https://github.com/RohitBhojak/dotodo",
+    "category": "Personal Project"
+  },
+  {
+    "title": "Message Board",
+    "description": "A high-performance mobile application built with modern frameworks to showcase technical expertise.",
+    "images": ["mmb-1.png", "mmb-2.png"],
+    "tech": ["Vanilla Javascript", "requestAnimationFrame"],
+    "link": "https://mini-message-board-eun8.onrender.com/",
+    "github": "https://github.com/RohitBhojak/mini-message-board",
+    "category": "Personal Project"
   }
 ]
