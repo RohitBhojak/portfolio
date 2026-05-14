@@ -1,6 +1,8 @@
 ---
 import { Icon } from "astro-icon/components";
 import localData from "../data/home.json";
+import profileImg from "../assets/RohitSinghBhojak.jpg";
+import { Image } from "astro:assets";
 
 //Data Definitions
 interface Social {
@@ -47,8 +49,8 @@ const { name, photoUrl, intro, introHtml, resumeUrl, socials } = data;
     <div
       class="balloon-float w-30 h-30 md:w-48 md:h-48 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]"
     >
-      <img
-        src={photoUrl}
+      <Image
+        src={profileImg}
         alt={name}
         onerror="this.onerror=null;this.src='/placeholder.jpeg';"
         class="w-full h-full object-cover scale-110"
