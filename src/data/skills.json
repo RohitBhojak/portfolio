@@ -27,15 +27,26 @@
       "skills": [
         { "name": "Git", "icon": "skill-icons:git" },
         { "name": "Vite", "icon": "skill-icons:vite-dark" },
-        { "name": "Jest", "icon": "skill-icons:jest" }
+        { "name": "Webpack", "icon": "skill-icons:webpack-dark" },
+        { "name": "Jest", "icon": "skill-icons:jest" },
+        { "name": "ESLint", "icon": "simple-icons:eslint" },
+        { "name": "Prettier", "icon": "simple-icons:prettier" }
       ]
     },
     {
       "title": "Problem Solving",
       "skills": [
         { "name": "Java", "icon": "skill-icons:java-dark" },
-        { "name": "LeetCode (1800+)", "icon": "simple-icons:leetcode" },
-        { "name": "Codeforces (1000+)", "icon": "simple-icons:codeforces" }
+        {
+          "name": "LeetCode (1800+)",
+          "icon": "simple-icons:leetcode",
+          "link": "https://leetcode.com/u/Rohit_Bhojak/"
+        },
+        {
+          "name": "Codeforces (1000+)",
+          "icon": "simple-icons:codeforces",
+          "link": "https://codeforces.com/profile/Rohit_Bhojak"
+        }
       ]
     }
   ]
