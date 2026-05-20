@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import localData from "../data/home.json";
-import profileImg from "../assets/RohitSinghBhojak.jpg";
+import { resolveAssetImage } from "../utils/images";
 import { Image } from "astro:assets";
 
 //Data Definitions
@@ -39,6 +39,7 @@ if (isApiLive && BASE_URL) {
 }
 
 const { name, photoUrl, intro, introHtml, resumeUrl, socials } = data;
+const profileImage = await resolveAssetImage(photoUrl);
 ---
 
 <section
@@ -49,12 +50,25 @@ const { name, photoUrl, intro, introHtml, resumeUrl, socials } = data;
     <div
       class="balloon-float w-30 h-30 md:w-48 md:h-48 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]"
     >
-      <Image
-        src={profileImg}
-        alt={name}
-        onerror="this.onerror=null;this.src='/placeholder.jpeg';"
-        class="w-full h-full object-cover scale-110"
-      />
+      <!-- Use Astro Image tag for optimization, fallback to img-->
+      {
+        profileImage ? (
+          <Image
+            src={profileImage}
+            alt={name}
+            class="w-full h-full object-cover scale-110"
+            loading="eager"
+          />
+        ) : (
+          <img
+            src={photoUrl || "/placeholder.jpeg"}
+            alt={name}
+            class="w-full h-full object-cover scale-110"
+            onerror="this.onerror=null;this.src='/placeholder.jpeg';"
+            loading="eager"
+          />
+        )
+      }
     </div>
     <div
       class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-20"

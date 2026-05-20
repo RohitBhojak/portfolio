@@ -1,50 +1,48 @@
 ---
 import { Icon } from "astro-icon/components";
+const { project } = Astro.props;
 import { Image } from "astro:assets";
-const { project, allImages } = Astro.props;
+import { resolveAssetImage } from "../utils/images";
 
+// Map through the array of image strings from project JSON
 const optimizedImages = await Promise.all(
   project.images.map(async (imgName: string) => {
-    const path = `/src/assets/${imgName}`;
-    if (allImages[path]) {
-      const mod = await allImages[path]();
-      return mod.default;
-    }
-    return null; // Fallback for '#' or missing files
+    return await resolveAssetImage(imgName);
   }),
 );
 
-const isSlider = optimizedImages.filter(Boolean).length > 1;
+const validImages = optimizedImages.filter(Boolean);
+
+const isSlider = validImages.length > 1;
 ---
 
 <div
   class="project-card group relative bg-accent/5 border border-accent/10 rounded-2xl overflow-hidden hover:border-accent/40 transition-all duration-500"
 >
   <div class="aspect-3/2 overflow-hidden relative bg-background/50">
-    <div class="absolute inset-0 transition-colors z-10 pointer-events-none"></div>
+    <div
+      class="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition-colors z-10 pointer-events-none"
+    >
+    </div>
 
     <div class={`w-full h-full relative ${isSlider ? "image-slider" : ""}`}>
       {
-        optimizedImages.map((imgMetadata, index) => {
-          if (!imgMetadata) {
-            // Fallback for the "#" or missing images in JSON
-            return (
-              <div class="absolute inset-0 bg-gray-800 flex items-center justify-center">
-                No Image
-              </div>
-            );
-          }
-
-          return (
+        validImages.length > 0 ? (
+          validImages.map((imgMetadata, index) => (
             <Image
               src={imgMetadata}
-              alt={`${project.title} screenshot ${index + 1}`}
-              width={1200}
-              height={800}
+              alt={`${project.title}`}
               class={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${index === 0 ? "opacity-100 z-0" : "opacity-0 z-[-1]"}`}
             />
-          );
-        })
+          ))
+        ) : (
+          /* Fallback box if array is empty or filenames are missing */
+          <img
+            src="/placeholder.jpeg"
+            alt={`${project.title} placeholder`}
+            class="absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
+          />
+        )
       }
     </div>
   </div>
