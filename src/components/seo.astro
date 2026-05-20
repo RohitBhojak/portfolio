@@ -1,0 +1,84 @@
+---
+import homeData from "../data/home.json";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+  type?: "website" | "profile";
+  ignoreTitleTemplate?: boolean;
+}
+
+const {
+  title,
+  description = homeData.seoDescription,
+  image = "/og-image.png",
+  canonical,
+  type = "website",
+  ignoreTitleTemplate = false,
+} = Astro.props;
+
+const siteName = homeData.name;
+const fullTitle = title && !ignoreTitleTemplate ? `${title} | ${siteName}` : title || siteName;
+
+const canonicalURL = canonical || new URL(Astro.url.pathname, Astro.site || Astro.url).href;
+const socialImageURL = new URL(image, Astro.site || Astro.url).href;
+
+// Filter out empty social URLs for the Schema.org data
+const activeSocialLinks = homeData.socials
+  .filter((social) => social.url && social.url !== "#")
+  .map((social) => social.url);
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{fullTitle}</title>
+<meta name="title" content={fullTitle} />
+<meta name="description" content={description} />
+<meta name="author" content={siteName} />
+
+<!-- Open Graph / Meta / LinkedIn / WhatsApp -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:locale" content="en_US" />
+
+<!-- Essential Image Tags for WhatsApp & LinkedIn -->
+<meta property="og:image" content={socialImageURL} />
+<meta property="og:image:url" content={socialImageURL} />
+<meta property="og:image:secure_url" content={socialImageURL} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={`Preview image for ${fullTitle}`} />
+
+<!-- Twitter / X -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={canonicalURL} />
+<meta property="twitter:title" content={fullTitle} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={socialImageURL} />
+
+<!-- JSON-LD Structured Data -->
+<script
+  type="application/ld+json"
+  is:inline
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: siteName,
+    url: canonicalURL,
+    image: socialImageURL,
+    jobTitle: "Software Developer",
+    sameAs: activeSocialLinks,
+  })}
+/>
