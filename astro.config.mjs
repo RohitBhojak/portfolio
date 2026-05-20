@@ -7,7 +7,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  // site: '#',
+  site: "https://rohit-singh-bhojak.netlify.app/",
   // base: '/',
   vite: {
     plugins: [tailwindcss()],
